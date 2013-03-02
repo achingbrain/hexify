@@ -1,0 +1,11 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	padding: 20px;
+}
+body.dragging {
+	background-color: #315E31;
+}

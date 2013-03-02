@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>:: Hexify ::</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/hexify.css" />
+
+		<script type="text/javascript">
+
+"use strict";
+
+		</script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/hexify.js"></script>
+		<script type="text/javascript">
+
+$(document).ready(hexify.ui.Hexify.init);
+
+		</script>
+	</head>
+	<body>
+		<h1>Hexify</h1>
+		<p>Drag a file onto the window, wait for the window to turn green, then drop the file.</p>
+		<form>
+			<label for="lineLength">Number of bytes per line: <span></span></label>
+			<input name="lineLength" type="range" value="10" min="1" max="100" step="1" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 0.8
+before_install:
+  - npm install grunt
+  - npm grunt-contrib-jasmine
+  - npm grunt-template-jasmine-istanbul
+  - npm grunt-contrib-copy
+  - npm grunt-contrib-concat
+  - npm grunt-contrib-jshint
+  - npm grunt-contrib-connect
+  - npm grunt-contrib-watch
