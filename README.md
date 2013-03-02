@@ -6,7 +6,9 @@ Do you need to easily turn files into hex arrays for your JavaScript unit tests?
 Demo
 -----
 
-`git clone http://github.com/achingbrain/hexify.git && cd hexify && npm install && grunt run` too much like hard work?  [Help is at hand](http://achingbrain.github.com/hexify).  Open that url and skip to step 4 below.
+`git clone http://github.com/achingbrain/hexify.git && cd hexify && npm install && grunt run` too much like hard work?
+
+[Help is at hand](http://achingbrain.github.com/hexify).  Open that url and skip to step 4 below.
 
 Getting started
 -----
