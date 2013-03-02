@@ -3,10 +3,10 @@ node_js:
   - 0.8
 before_install:
   - npm install grunt
-  - npm grunt-contrib-jasmine
-  - npm grunt-template-jasmine-istanbul
-  - npm grunt-contrib-copy
-  - npm grunt-contrib-concat
-  - npm grunt-contrib-jshint
-  - npm grunt-contrib-connect
-  - npm grunt-contrib-watch
+  - npm install grunt-contrib-jasmine
+  - npm install grunt-template-jasmine-istanbul
+  - npm install grunt-contrib-copy
+  - npm install grunt-contrib-concat
+  - npm install grunt-contrib-jshint
+  - npm install grunt-contrib-connect
+  - npm install grunt-contrib-watch
