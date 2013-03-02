@@ -21,8 +21,12 @@ hexify.ui.HexifyListener = function(bytesPerLineElement, outputElement) {
 			}
 		}
 
-		$(outputElement).append("<h2>" + file.name + "</h2>");
+		var header = $("<h2>" + file.name + "</h2>");
+		$(outputElement).append(header);
 		$(outputElement).append("<pre>var file = [ \r\n\t" + output + "\r\n ];</pre>");
+		$(outputElement).animate({
+			scrollTop: $(header).offset().top
+		}, 500);
 	};
 
 	hexify.core.NotificationCentre.register("onHexified", this.onHexified);
