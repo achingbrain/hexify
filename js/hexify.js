@@ -198,7 +198,7 @@ hexify.ui.HexifyListener = function(bytesPerLineElement, outputElement) {
 			numberProcessed++;
 
 			if(numberProcessed == bytesPerLine) {
-				output += "\r\n\t";
+				output = _.str.trim(output) + "\r\n\t";
 				numberProcessed = 0;
 			}
 		}
