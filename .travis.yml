@@ -3,6 +3,7 @@ node_js:
   - 0.8
 before_install:
   - npm install grunt
+  - npm install grunt-cli
   - npm install grunt-contrib-jasmine
   - npm install grunt-template-jasmine-istanbul
   - npm install grunt-contrib-copy
