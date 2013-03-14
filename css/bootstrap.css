@@ -175,7 +175,8 @@ textarea {
     content: "";
   }
   pre,
-  blockquote {
+  blockquote,
+  textarea.pre {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -502,7 +503,8 @@ address {
   line-height: 20px;
 }
 code,
-pre {
+pre,
+textarea.pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 12px;
@@ -518,7 +520,8 @@ code {
   border: 1px solid #e1e1e8;
   white-space: nowrap;
 }
-pre {
+pre,
+textarea.pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
@@ -538,7 +541,7 @@ pre {
 pre.prettyprint {
   margin-bottom: 20px;
 }
-pre code {
+pre code, textarea.pre {
   padding: 0;
   color: inherit;
   white-space: pre;
@@ -952,6 +955,7 @@ textarea {
   height: auto;
 }
 textarea,
+textarea.pre,
 input[type="text"],
 input[type="password"],
 input[type="datetime"],

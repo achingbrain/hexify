@@ -203,9 +203,26 @@ hexify.ui.HexifyListener = function(bytesPerLineElement, outputElement) {
 			}
 		}
 
-		var header = $("<h2>" + file.name + "</h2>");
-		$(outputElement).append(header);
-		$(outputElement).append("<pre>var file = [ \r\n\t" + output + "\r\n ];</pre>");
+		var div = $("<div></div>");
+
+		var remove = $("<small><a><i class=\"icon-remove-sign icon-white\"></i> Remove</a></small>");
+		$(remove).click(function() {
+			div.remove();
+		});
+
+		var textarea= $("<textarea class=\"pre\">[\r\n\t" + output + "\r\n]</textarea>");
+		$(textarea).click(function() {
+			textarea.select();
+		});
+
+		var header = $("<h2></h2>");
+		header.append(file.name);
+		header.append(remove);
+
+		//$(div).append(remove);
+		$(div).append(header);
+		$(div).append(textarea);
+		$(outputElement).append(div);
 		$(outputElement).animate({
 			scrollTop: $(header).offset().top
 		}, 500);
